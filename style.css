@@ -55,3 +55,46 @@ body{
     background-color: var(--bgColor);
     color: var(--accentColor);
 }
+
+#footer {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: var(--font);
+    text-align: center;
+    margin-top: 3000px;
+    padding-bottom: 60px;
+    position: relative;
+    z-index: 100;
+}
+
+#footer span {
+    display: inline-block;
+    animation: wave 3s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+}
+
+#moonRolling {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 3100px;
+    left: -100px;
+    z-index: 50;
+    animation: rollMoon 60s linear infinite;
+}
+
+@keyframes rollMoon {
+    0% {
+        left: -100px;
+        transform: rotate(0deg);
+    }
+    100% {
+        left: calc(100vw + 100px);
+        transform: rotate(1080deg);
+    }
+}
