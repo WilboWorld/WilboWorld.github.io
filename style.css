@@ -62,8 +62,8 @@ body{
 }
 
 .link:hover{
-    background-color: var(--bgColor);
-    color: var(--accentColor);
+    background-color: transparent;
+    color: #fff;
 }
 
 #footer {
